@@ -12,5 +12,6 @@ export interface Order {
   export interface VolatilityPeriod {
     hour: string;
     score: number;
+    averagePercentageChange: number;
   }
   

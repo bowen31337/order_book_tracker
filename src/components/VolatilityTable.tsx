@@ -20,6 +20,7 @@ const VolatilityTable: React.FC<VolatilityTableProps> = ({ volatility }) => {
           <TableRow>
             <TableCell>Hour</TableCell>
             <TableCell>Volatility Score</TableCell>
+            <TableCell>Avg % Change</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -27,6 +28,7 @@ const VolatilityTable: React.FC<VolatilityTableProps> = ({ volatility }) => {
             <TableRow key={index}>
               <TableCell>{period.hour}</TableCell>
               <TableCell>{period.score.toFixed(10)}</TableCell>
+              <TableCell>{period.averagePercentageChange.toFixed(2)}%</TableCell>
             </TableRow>
           ))}
         </TableBody>
